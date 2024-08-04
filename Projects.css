@@ -1,0 +1,48 @@
+.projects {
+  padding: 60px;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust height as needed */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Make the page scrollable if there are more than 9 items */
+.project-list {
+  max-height: calc(300px * 3 + 40px * 2); /* 3 rows with gaps */
+  overflow-y: auto;
+}

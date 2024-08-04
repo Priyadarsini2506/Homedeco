@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Changed from right to center for vertical alignment */
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block; /* Ensure the link takes up the full space of the list item */
+  padding: 8px 12px; /* Add some padding for better clickability */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  background-color: #555; /* Optional: Background color on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .navbar li {
+    margin-left: 0; /* Remove margin on the left for vertical stack */
+    margin-bottom: 10px; /* Add space between vertical items */
+  }
+}

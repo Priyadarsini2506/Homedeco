@@ -1,0 +1,120 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-size: cover;
+  color: #efdede;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar h1,
+.navbar ul {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-section {
+  margin-top: 100px; /* Ensure sufficient space below the navbar */
+  margin-bottom: 100px;
+  text-align: center;
+  width: 100%; /* Full width to center the logo */
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.logo {
+  width: 150px; /* Adjust width as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: block; /* Ensure the logo is a block element */
+  margin: 0 auto; /* Center the logo horizontally */
+  
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px; /* Space between logo and content */
+  max-width: 600px; /* Maintain container size */
+  /* Ensure it is above other content */
+}
+
+.footer {
+  padding: 10px;
+  background: rgba(7, 3, 3, 0.195);
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow cards to wrap for smaller screens */
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  background-color: #090605;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
